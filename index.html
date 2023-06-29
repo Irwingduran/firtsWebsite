@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Irwing Duran">
+    <meta name="keybords" content="Irwing Duran, foto, fotografía, diseño web, blog, universitario, poblano, Puebla, playeras, 
+    desarrollador creativo, front-end, desarrollo web, mexicano, ">
+    <meta name="descripcion" content="Soy Irwing Durán, este es mi website donde podrás encontrar mi trabajo como freelance,
+    saber un poco más acerce de mi arte y creatividad. Y también encontraras mi galería como fotógrafo ">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inicio | Irwing Durán</title>
+
+    <link rel="icon" href="./css/nm/1c0.svg">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/eb53ce1a0c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">Irwing Durán</a>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <snap class="menu-icon__line"></snap>
+        </label>
+        <ul class="nav-links">
+            <li class="nav-link">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="nav-link">
+                <a href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-link">
+                <a href="portafolio.html">Servicios</a>
+            </li>
+            <li class="nav-link">
+                <a href="conoceme.html">Conóceme</a>
+            </li>
+        </ul>
+    </header>
+    <section>
+        <img src="./fotografia/moon.png" id="moon">
+        <img src="./fotografia/monatana1.png" id="mountains_behind">
+        <img src="./fotografia/stars.png" id="stars">
+        <h1 id="text">"Apunta a la luna y si fallas, <br> al menos estarás entre <br> las estrellas"</h1>
+        <p href="" id="btn"></p>
+        <img src="./fotografia/mountains.png" id="mountains_front">
+    </section>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+
+        })
+    </script>
+
+
+    <div class="container-intro">
+        <h2>🌇👨‍💻DE DÍA ESTUDIANTE DE INGENERÍA <br> - <br> DE NOCHE DESARROLLADOR CREATIVO👨‍💻🌃</h2><br>
+        <p>Desarrollador Web, Programador y Fotógrafo</p>
+
+    </div>
+
+    <div class="container-intro-two">
+        <div class="intro-image">
+            <img src="./css/nm/IMG_06.jpg">
+        </div>
+        <div class="intro-text">
+            <h3>SOBRE MÍ</h3>
+            <p>
+                Pertenezco de aquella generación que más contacto ha tenido con la tecnología.
+                Crecer cerca de una computadora, una consola o un celular es de las cosas
+                por las que agradezco haber nacido en esta etapa de la era digital. Sin duda,
+                tener este acercamiento con la tecnología fue lo que detonó que aprendiera a programar. <br>
+                Gracias a un smartphone pude desarrollar varias habilidades, una de ellas es la fotografía. <br>
+                <a href="conoceme.html">Conóceme</a>
+
+
+            </p>
+        </div>
+    </div>
+
+
+    <div class="services">
+        <div class="container-services">
+            <h1 class="sub-title">MIS SERVICIOS</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Diseño Web</h2>
+                    <p>
+                        Diseño, planificación y desarrollo de interfaz para algún catálogo
+                        proyecto o cualquier cosa que desee covertirla en digital.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Back-End</h2>
+                    <p>
+                        Implemento de bases de datos con manejo de usuarios para que tenga
+                        una mejor administración y control de su negocio, al igual un mejor
+                        servicio con sus clientes.
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-memory"></i>
+                    <h2>Alojamiento Web</h2>
+                    <p>
+                        No tiene que preocuparse de nada porque el mantenimiento y el alojamiento!
+                        De eso me encargo yo, incluyendo las actualizaciones o las nuevas opciones que
+                        se vaya necesitando al rededor del proyecto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro-skills">
+        <div class="skills">
+            <h3>MIS SKILLS</h3>
+        </div>
+        <div class="container-skill">
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="./css/nm/html.png" class="skill-ico">
+                    </div>
+                    <h4>HTML </h4>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="./css/nm/css.png" class="skill-ico">
+                    </div>
+                    <h4>CSS </h4>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="./css/nm/javascript.png" class="skill-ico">
+                    </div>
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                        <img src="./css/nm/python.png" class="skill-ico">
+                    </div>
+                    <h4>Python</h4>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-ico">
+                        <img src="./css/nm/php.png">
+                    </div>
+                    <h4>PHP</h4>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-ico">
+                        <img src="./css/nm/sass.png">
+                    </div>
+                    <h4>Sass</h4>
+                </div>
+            </div>
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-ico">
+                        <img src="./css/nm/react.png">
+                    </div>
+                    <h4>React</h4>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-ico">
+                        <img src="./css/nm/photoshop.png">
+                    </div>
+                    <h4>Photoshop</h4>
+                </div>
+            </div>
+
+
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-ico">
+                        <img src="./css/nm/lightroom.png">
+                    </div>
+                    <h4>Lightroom</h4>
+                </div>
+            </div>
+
+
+
+        </div>
+        <p>*web creada utilizando mis skills*</p>
+    </div>
+
+    <div class="title-gallery">
+        <h3>FOTOGRAFÍA</h3>
+        <p>
+            Siempre que quieres capturar un instante, comienzas observando el marco de la fotografía y eventualmente
+            ese instante capturado se convertirá en un recuerdo. <br>
+            <a href="galeria.html">Click aquí</a> para ver mi galería.
+        </p>
+    </div>
+
+    <div class="intro-gallery">
+        <div class="card">
+            <div class="face front">
+                <img src="fotografia/IMG_3825.jpeg" alt="">
+                <h3>Instantes</h3>
+            </div>
+            <div class="face back">
+                <h3>...</h3>
+                <p>
+                    Nostros los fotógrafos, tratamos con cosas
+                    que se desvanecen continuamente. No podemos
+                    revelar y copiar un recuerdo.
+                </p>
+                <div class="link">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="face front">
+                <img src="fotografia/IMG_2977.jpeg" alt="">
+                <h3>Estructura </h3>
+            </div>
+            <div class="face back">
+                <h3>...</h3>
+                <p>
+                    Toda fotografía comienza por el marco.
+                </p>
+                <div class="link">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face front">
+                <img src="fotografia/IMG_2998.jpeg" alt="">
+                <h3>Recuerdos</h3>
+            </div>
+            <div class="face back">
+                <h3>...</h3>
+                <p>La cámara es un espejo con memoria,
+                    pero sin pensamiento.
+                </p>
+                <div class="link">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="col-3">
+            <h3>CONTACTO</h3>
+            <p>sólo whatsapp:<br>(+52)222 909 7515<br>contacto@irwingduran.com</p>
+            <p>copyright &copy; 2022</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/irwingduran/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/Irwingduran"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.tiktok.com/@irwingdurann?lang=es"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/irwing-dur%C3%A1n-r-b7259423b/"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="./js/codigo.js"></script>
+
+</body>
+
+</html>

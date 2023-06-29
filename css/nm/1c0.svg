@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="99.408" height="112.234" viewBox="0 0 31 35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #627fc8;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 8.333px;
+        fill: #627fc8;
+        text-anchor: middle;
+        font-family: Georgia;
+      }
+    </style>
+  </defs>
+  <path id="Elipse_1" data-name="Elipse 1" class="cls-1" d="M16,30A12.757,12.757,0,0,0,29,17.5,12.757,12.757,0,0,0,16,5,12.757,12.757,0,0,0,3,17.5,12.757,12.757,0,0,0,16,30Z"/>
+  <path id="Elipse_1-2" data-name="Elipse 1" class="cls-1" d="M15,30A12.757,12.757,0,0,0,28,17.5,12.757,12.757,0,0,0,15,5,12.757,12.757,0,0,0,2,17.5,12.757,12.757,0,0,0,15,30Z"/>
+  <text id="I_D" data-name="I D" class="cls-2" x="15.791" y="21.075"><tspan x="15.791">I D</tspan></text>
+</svg>
